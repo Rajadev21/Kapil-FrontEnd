@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+    
+}
+
+h1 {
+    font-size: 3em;
+    color: #333;
+}
+
+.location::before {
+    content: "";
+    animation: changeLocation 5s infinite;
+}
+
+@keyframes changeLocation {
+    0% { content: "Goa"; }
+    20% { content: "Kerala"; }
+    40% { content: "Chennai"; }
+    60% { content: "Mumbai"; }
+    80% { content: "Bangalore"; }
+    100% { content: "Goa"; }
+}

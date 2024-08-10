@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('./beach.avif') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+.location::before {
+    content: "";
+    animation: changeLocation 5s infinite;
+}
+
+@keyframes changeLocation {
+    0% { content: "Goa"; }
+    20% { content: "Kerala"; }
+    40% { content: "Chennai"; }
+    60% { content: "Mumbai"; }
+    80% { content: "Bangalore"; }
+    100% { content: "Goa"; }
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<!-- <img src="https://cdn.pixabay.com/photo/2023/02/01/21/40/pink-7761356_1280.png" alt="" width="100%"> -->
+<body background="https://cdn.pixabay.com/photo/2023/02/01/21/40/pink-7761356_1280.png"> 
+    <!-- the background attribute is depreicated -->
+    <!-- rowspan is adding in vertical -->
+    <!-- colspan is adding in horizontal -->
+    
+    <!-- 8rows -->
+    <!-- 6cols -->
+    <table border="1" cellpadding="35px"  >
+        <!-- heading row -->
+        <tr>  
+            <th></th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <!-- 9 to 10 -->
+        <tr>
+            <td>9:00 AM - 10:00 AM</td>
+            <td rowspan="2">Mathematics</td>
+            <td>Physics</td>
+            <td rowspan="2">English</td>
+            <td colspan="2">Chemistry Lab</td>
+        </tr>
+        <!-- 10 to 11 -->
+        <tr>
+            <td>10:00 AM - 11:00 AM</td>
+            <td>History</td>
+            <td>Physics</td>
+            <td>Biology</td>
+        </tr>
+        <!-- 11 to 12 -->
+        <tr>
+            <td>11:00 AM - 12:00 PM</td>
+            <td>English</td>
+            <td rowspan="2">Computer Science</td>
+            <td>Mathematics</td>
+            <td rowspan="2">Chemistry</td>
+            <td>History</td>
+        </tr>
+        <!-- 12 to 1 -->
+        <tr>
+            <td>12:00 PM - 1:00 PM</td>
+            <td>Biology</td>
+            <td>Physics Lab</td>
+            <td>Computer Science</td>
+        </tr>
+        <!-- 1 to 2 -->
+        <tr>
+            <td>1:00 PM - 2:00 PM</td>
+            <td colspan="5">Lunch Break</td>
+        </tr>
+        <!-- 2 to 3 -->
+        <tr>
+            <td>2:00 PM - 3:00 PM</td>
+            <td>Chemistry</td>
+            <td>English</td>
+            <td>Biology Lab</td>
+            <td>Mathematics</td>
+            <td>Physics</td>
+        </tr>
+        <!-- 3 to 4 -->
+        <tr>
+            <td>3:00 PM - 4:00 PM</td>
+            <td>History</td>
+            <td>Computer Science</td>
+            <td>Mathematics</td>
+            <td>English</td>
+            <td>Chemistry</td>
+        </tr>
+    </table>
+</body>
+
+</html>

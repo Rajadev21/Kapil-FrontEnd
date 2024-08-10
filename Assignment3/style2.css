@@ -1,0 +1,10 @@
+.custom-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+ li::before {
+    content: "\2665";
+    margin-right: 10px;
+    color: red; /* Optional: Change color to red */
+}
